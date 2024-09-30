@@ -24,7 +24,7 @@
           "python.testing.unittestEnabled": false,
           "python.testing.pytestEnabled": true,
           "ruff.nativeServer": true,
-          "ruff.configuration": "${containerWorkspaceFolder}/pyproject.toml",
+          "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml",
           "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
           "dotfiles.installCommand": "install.sh"
         },
