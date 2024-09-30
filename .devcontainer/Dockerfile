@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget -P /tmp/ https://github.com/scipopt/scip/releases/download/v911/SCIPOptSuite-9.1.1-Linux-debian11.deb \
+RUN wget -q -P /tmp/ https://github.com/scipopt/scip/releases/download/v911/SCIPOptSuite-9.1.1-Linux-debian11.deb \
     && dpkg -i /tmp/SCIPOptSuite-9.1.1-Linux-debian11.deb \
     && rm /tmp/SCIPOptSuite-9.1.1-Linux-debian11.deb
 
