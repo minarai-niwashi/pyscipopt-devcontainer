@@ -1,44 +1,44 @@
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "build": {
-      "dockerfile": "Dockerfile",
-      "context": ".."
-    },
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "notebook.formatOnSave.enabled": true,
-          "notebook.codeActionsOnSave": {
-            "notebook.source.fixAll": "explicit",
-            "notebook.source.organizeImports": "explicit"
-          },
-          "[python]": {
-            "editor.defaultFormatter": "charliermarsh.ruff",
-            "editor.formatOnSave": true,
-            "editor.codeActionsOnSave": {
-              "source.fixAll": "explicit",
-              "source.organizeImports": "explicit"
-            }
-          },
-          "python.testing.pytestArgs": ["src"],
-          "python.testing.unittestEnabled": false,
-          "python.testing.pytestEnabled": true,
-          "ruff.nativeServer": true,
-          "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml",
-          "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
-          "dotfiles.installCommand": "install.sh"
+  "name": "${localWorkspaceFolderBasename}",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "notebook.formatOnSave.enabled": true,
+        "notebook.codeActionsOnSave": {
+          "notebook.source.fixAll": "explicit",
+          "notebook.source.organizeImports": "explicit"
         },
-        "extensions": [
-          "ms-python.python",
-          "charliermarsh.ruff",
-          "ms-toolsai.jupyter",
-          "njpwerner.autodocstring",
-          "shardulm94.trailing-spaces",
-          "Gruntfuggly.todo-tree",
-          "EditorConfig.EditorConfig",
-          "esbenp.prettier-vscode"
-        ]
-      }
-    },
-    "postCreateCommand": ".devcontainer/postCreateCommand.sh"
-  }
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          }
+        },
+        "python.testing.pytestArgs": ["src"],
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        "ruff.nativeServer": true,
+        "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml",
+        "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
+        "dotfiles.installCommand": "install.sh"
+      },
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter",
+        "njpwerner.autodocstring",
+        "shardulm94.trailing-spaces",
+        "Gruntfuggly.todo-tree",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh"
+}
