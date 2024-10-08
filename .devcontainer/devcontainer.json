@@ -20,7 +20,7 @@
             "source.organizeImports": "explicit"
           }
         },
-        "python.testing.pytestArgs": ["src"],
+        "python.testing.pytestArgs": ["src", "example"],
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
         "ruff.nativeServer": true,
