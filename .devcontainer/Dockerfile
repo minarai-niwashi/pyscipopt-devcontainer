@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libblas3=3.9.0-3+deb11u1 \
     libcliquer1=1.21-2 \
     libgfortran5=10.2.1-6 \
+    libgslcblas0=2.6+dfsg-2 \
     libgsl25=2.6+dfsg-2 \
     liblapack3=3.9.0-3+deb11u1 \
     libopenblas0=0.3.13+ds-3+deb11u1 \
