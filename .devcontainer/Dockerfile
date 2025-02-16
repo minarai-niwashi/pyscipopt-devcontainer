@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:3.11-bullseye
+FROM mcr.microsoft.com/devcontainers/python:3.12-bullseye
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     libblas3=3.9.0-3+deb11u1 \
