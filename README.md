@@ -4,5 +4,5 @@ This repository provides a devcontainer setup for building a development environ
 
 ## Environment
 
-- **Python Version**: `3.11`
-- **Base Image**: `mcr.microsoft.com/devcontainers/python:3.11-bullseye`
+- **Python Version**: `3.12`
+- **Base Image**: `mcr.microsoft.com/devcontainers/python:3.12-bullseye`
