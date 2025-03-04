@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python3 -m pip install --upgrade pip
-python3 -m pip --no-cache-dir install -r requirements.txt
+sh -c "$(curl -LsSf https://astral.sh/uv/0.6.3/install.sh)"
+uv sync --frozen --dev

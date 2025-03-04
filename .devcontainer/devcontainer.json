@@ -4,6 +4,9 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "containerEnv": {
+    "UV_CACHE_DIR": "${containerWorkspaceFolder}/.cache/uv"
+  },
   "customizations": {
     "vscode": {
       "settings": {
@@ -24,7 +27,7 @@
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
         "python.analysis.inlayHints.callArgumentNames": "partial",
-        "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml",
+        "ruff.configuration": "${containerWorkspaceFolder}/pyproject.toml",
         "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
         "dotfiles.installCommand": "install.sh",
         "terminal.integrated.defaultProfile.linux": "zsh"
