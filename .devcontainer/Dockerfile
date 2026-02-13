@@ -1,14 +1,16 @@
 FROM mcr.microsoft.com/devcontainers/python:3.12-bullseye
 
+RUN rm -f /etc/apt/sources.list.d/yarn.list /etc/apt/sources.list.d/yarn*.list || true
+
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    libblas3=3.9.0-3+deb11u1 \
-    libcliquer1=1.21-2 \
-    libgfortran5=10.2.1-6 \
-    libgslcblas0=2.6+dfsg-2 \
-    libgsl25=2.6+dfsg-2 \
-    liblapack3=3.9.0-3+deb11u1 \
-    libopenblas0=0.3.13+ds-3+deb11u1 \
-    libtbb2=2020.3-1 \
+    libblas3 \
+    libcliquer1 \
+    libgfortran5 \
+    libgslcblas0 \
+    libgsl25 \
+    liblapack3 \
+    libopenblas0 \
+    libtbb2 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
