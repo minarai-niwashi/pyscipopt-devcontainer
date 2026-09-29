@@ -27,6 +27,7 @@
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
         "python.analysis.inlayHints.callArgumentNames": "partial",
+        "python.terminal.activateEnvironment": false,
         "ruff.configuration": "${containerWorkspaceFolder}/pyproject.toml",
         "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
         "dotfiles.installCommand": "install.sh",
